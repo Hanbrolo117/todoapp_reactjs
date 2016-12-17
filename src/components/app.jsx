@@ -33,7 +33,7 @@ export default class App extends React.Component{
     return(
       <div>
         <h1>React Todo App</h1>
-        <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)}/>
+        <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
         <TodosList
         todos={this.state.todos}
         toggleCompleteHandler={this.toggleCompleteHandler.bind(this)}

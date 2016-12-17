@@ -17,16 +17,16 @@ export default class TodosListItem extends React.Component{
     if(this.state.isEditing){
       return(
         <td>
-          <button onClick={this.onSaveClick.bind(this)}>Save</button>
-          <button onClick={this.toggleEditClick.bind(this)}>Cancel</button>
+          <button className="pure-button" onClick={this.onSaveClick.bind(this)}>Save</button>
+          <button className="pure-button" onClick={this.toggleEditClick.bind(this)}>Cancel</button>
         </td>
       );
     }
 
     return(
       <td>
-        <button onClick={this.toggleEditClick.bind(this)}>Edit</button>
-        <button onClick={this.props.deleteTask.bind(this, this.props.task)}>Delete</button>
+        <button className="pure-button" onClick={this.toggleEditClick.bind(this)}>Edit</button>
+        <button className="pure-button" onClick={this.props.deleteTask.bind(this, this.props.task)}>Delete</button>
       </td>
     );
 
@@ -44,7 +44,7 @@ export default class TodosListItem extends React.Component{
     if(this.state.isEditing){
       return(
         <td>
-          <form onSubmit={this.onSaveClick.bind(this)}>
+          <form className="pure-form" onSubmit={this.onSaveClick.bind(this)}>
             <input type="text" defaultValue={task} ref="editInput"/>
           </form>
         </td>

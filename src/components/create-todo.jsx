@@ -16,9 +16,9 @@ export default class CreateTodo extends React.Component{
 
   render(){
     return(
-      <form onSubmit={this.handleCreate.bind(this)}>
+      <form className="pure-form" onSubmit={this.handleCreate.bind(this)} >
         <input type="text" placeholder="Task to complete?" ref="createInput" />
-        <button>Create</button>
+        <button className="pure-button">Create</button>
         {this.renderError()}
       </form>
     );

@@ -12,7 +12,7 @@ export default class TodosList extends React.Component{
 
   render(){
     return(
-      <table>
+      <table className="pure-table">
         <TodosListHeader/>
         <tbody>
           {this.renderItems()}
